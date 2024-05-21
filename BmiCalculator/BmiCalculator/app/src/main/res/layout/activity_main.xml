@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222831"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/AppName_LBL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="محاسبه شاخص BMI"
+        android:textColor="#00ADB5"
+        android:textSize="60px"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.061" />
+
+    <TextView
+        android:id="@+id/Ghad_LBL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="لطفا قد خود را وارد کنید : (سانتی متر)"
+        android:textColor="#00ADB5"
+        android:textSize="30px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.19" />
+
+    <TextView
+        android:id="@+id/Vazn_LBL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" لطفا وزن خود را وارد کنید : (کیلوگرم)"
+        android:textColor="#00ADB5"
+        android:textSize="30px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.361" />
+
+    <EditText
+        android:id="@+id/Ghad_TXT"
+        android:layout_width="288dp"
+        android:layout_height="57dp"
+        android:ems="10"
+        android:hint="مثال : 180"
+        android:inputType="number"
+        android:text=""
+        android:textColor="#EEEEEE"
+        android:textColorHint="#393E46"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.261" />
+
+    <EditText
+        android:id="@+id/Vazn_TXT"
+        android:layout_width="288dp"
+        android:layout_height="57dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text=""
+        android:hint="مثال : 80"
+        android:textColorHint="#393E46"
+        android:textColor="#EEEEEE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.449" />
+
+    <Button
+        android:id="@+id/Sum_BTN"
+        android:layout_width="112dp"
+        android:layout_height="57dp"
+        android:backgroundTint="#00ADB5"
+        android:text="محاسبه"
+        android:textSize="30px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.584" />
+
+    <Switch
+        android:id="@+id/DarkMode_SW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="Dark Mode"
+        android:textColor="#00ADB5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.889"
+        tools:checked="true" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
